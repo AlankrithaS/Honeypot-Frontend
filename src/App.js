@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Dashboard from "./components/Dashboard";
+import LiveAttackLogs from "./components/LiveAttackLogs";
+import AttackAnalysis from "./components/AttackAnalysis";
+// import CredentialBreach from "./components/CredentialInsights";
+// import AttackLocations from "./components/GeospatialAttackView";
+import GeospatialAttackView from "./components/GeospatialAttackView";
+import AttackSimulation from "./components/AttackSimulation";
+import AdminControlPanel from "./components/AdminControlPanel";
+import CredentialInsights from "./components/CredentialInsights"; 
+import RealTimeAttackLogs from "./components/RealTimeAttackLogs"; // ✅ Import the missing component
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/logs" element={<LiveAttackLogs />} />
+        <Route path="/analysis" element={<AttackAnalysis />} />
+        <Route path="/credentials" element={<CredentialInsights />} />
+        <Route path="/locations" element={<GeospatialAttackView />} />
+        <Route path="/simulate" element={<AttackSimulation />} />
+        <Route path="/admin" element={<AdminControlPanel />} />
+        <Route path="/realtime" element={<RealTimeAttackLogs />} />  {/* ✅ Fix Added */}
+      </Routes>
+    </>
   );
 }
 

@@ -1,0 +1,38 @@
+.admin-control-panel {
+    padding: 20px;
+  }
+  
+  .threshold, .alerts, .logs {
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  input[type="number"], button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background: #444;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  .log {
+    background: #222;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }

@@ -1,0 +1,44 @@
+.real-time-logs {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.log-container {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log-table th, .log-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.log-table th {
+  background-color: #333;
+}
+
+.no-logs {
+  text-align: center;
+  color: #999;
+}

@@ -1,0 +1,39 @@
+.live-attack-logs {
+    padding: 20px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .logs {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .critical {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Toast Notification */
+  .Toastify__toast {
+    font-size: 16px;
+  }
+  

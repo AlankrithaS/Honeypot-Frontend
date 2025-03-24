@@ -1,0 +1,27 @@
+.geo-container {
+  display: flex;
+  height: 100vh;
+}
+
+.geo-sidebar {
+  width: 300px;
+  padding: 20px;
+  background: #1e1e2f;
+  color: white;
+  border-right: 2px solid #444;
+}
+
+.geo-sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.geo-sidebar p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.geo-map {
+  flex: 1;
+  height: 100vh;
+}
